@@ -1,0 +1,20 @@
+<p>pipes works!</p>
+<h3>pipes example</h3>
+
+<h1>{{message1 | uppercase}}</h1>
+<h1>{{message1 | lowercase}}</h1>
+<p>{{summary | titlecase}}</p>
+<h3>Today's Date: {{todaysDate}}</h3>
+<h3>Short Date:{{todaysDate | date:'shortDate'}}</h3>
+<h3>Medium Date : {{todaysDate | date:'mediumDate'}}</h3>
+<h3>Long Date : {{todaysDate | date:'longDate'}}</h3>
+<h3>Todays Date in DDMMYYYY : {{todaysDate | date:'dd/MM/yyyy'}}</h3>
+<h3>Product Price : {{productPrice | currency}}</h3>
+<h3>Product Price In Rupees: {{productPrice | currency:'INR'}}</h3>
+
+<p> represents no of arguments before the decimal 
+ 3-4 -> represents no of argument after the decimal we have provided range(3-4) 
+ minimum 3 no and maximum 4 number.
+</p>
+<h3>Average is :{{average | number:'.1-2'}}</h3>
+<h3>Average is :{{average | number:'10.3-4'}}</h3>
